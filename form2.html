@@ -4,10 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: brown;
+        }
+        label{
+            color: blue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #subtitle{
+            background-color: black;
+            color: chartreuse;
+        }
+        .info{
+            background-color: crimson;
+            color: white;
+        }
+    </style>
 </head>
 <body>
+    <h1>Form examples</h1>
+    <h2 id="subtitle">This is a subtitle</h2>
     <form action="data.php" method="post">
-        <label for="female">Female</label>
+        <label style="color: blueviolet;" for="female">Female</label>
         <input type="radio" name="gender" id="female" value="female" required>
         <label for="male">Male</label>
         <input type="radio" name="gender" id="male" value="male">
@@ -27,5 +47,9 @@
         <br><br>
         <input type="submit" value="Submit">
     </form>
+    <h3 class="info">Lorem ipsum dolor sit amet.</h3>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis!</h3>
+    <h3>Lorem, ipsum dolor.</h3>
+    <p class="info">Lorem ipsum dolor sit amet consectetur.</p>
 </body>
 </html>
